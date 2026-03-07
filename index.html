@@ -1,0 +1,189 @@
+﻿<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angelikas Kitchen</title>
+    <meta
+      name="description"
+      id="metaDescription"
+      content="Angelikas Kitchen med recept på mat, bakning, dryck och tillbehör."
+    />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+    <meta property="og:locale" content="sv_SE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Angelikas Kitchen" />
+    <meta property="og:title" id="ogTitle" content="Angelikas Kitchen" />
+    <meta
+      property="og:description"
+      id="ogDescription"
+      content="Angelikas Kitchen med recept på mat, bakning, dryck och tillbehör."
+    />
+    <meta property="og:image" id="ogImage" content="images/ak.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="twitterTitle" content="Angelikas Kitchen" />
+    <meta
+      name="twitter:description"
+      id="twitterDescription"
+      content="Angelikas Kitchen med recept på mat, bakning, dryck och tillbehör."
+    />
+    <meta name="twitter:image" id="twitterImage" content="images/ak.png" />
+    <script type="application/ld+json" id="structuredData">
+      {}
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo"><img src="images/ak.png" height="40" /></a>
+        <div class="social-links">
+          <a
+            href="https://www.tiktok.com/@angelikaskitchen"
+            target="_blank"
+            title="TikTok"
+          >
+            <img src="images/tiktok.png" width="30" />
+          </a>
+          <a
+            href="https://www.instagram.com/angelikaskitchen"
+            target="_blank"
+            title="Instagram"
+          >
+            <img src="images/instagram.png" width="30" />
+          </a>
+          <div class="nav-search" id="navSearch">
+            <button
+              class="nav-search-toggle"
+              id="navSearchToggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="navSearchDropdown"
+              title="Sök recept"
+            >
+              <img src="images/search.png" width="16" height="16" alt="Sök" />
+            </button>
+            <div class="nav-search-dropdown" id="navSearchDropdown" hidden>
+              <input
+                type="text"
+                id="navSearchInput"
+                class="nav-search-input"
+                placeholder="Sök recept..."
+              />
+              <div class="nav-search-results" id="navSearchResults"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section - Latest Recipe -->
+    <section class="hero">
+      <div class="hero-content" id="heroSection">
+        <div class="hero-image">
+          <img id="heroImage" src="" alt="Latest Recipe" />
+          <div class="hero-badge" id="heroBadge"></div>
+        </div>
+        <div class="hero-text">
+          <div class="recipe-categories" id="heroCategory"></div>
+          <h1 class="hero-title" id="heroTitle"></h1>
+          <p class="hero-description" id="heroDescription"></p>
+          <div class="hero-meta">
+            <span
+              ><img src="images/clock.png" width="20" />
+              <span id="heroTime"></span
+            ></span>
+            <span
+              ><img src="images/food.png" width="20" />
+              <span id="heroServings"></span
+            ></span>
+          </div>
+          <button class="hero-btn" id="heroBtn">Visa Recept</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-controls">
+      <div class="top-controls-inner">
+        <div class="controls-row">
+          <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Sök recept..." />
+          </div>
+          <select id="sortSelect" class="sort-select">
+            <option value="newest">Nyaste</option>
+            <option value="oldest">Äldsta</option>
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+          </select>
+        </div>
+        <details class="category-accordion" id="categoryAccordion">
+          <summary>
+            Kategorier
+            <span id="currentFilterLabel">Alla</span>
+          </summary>
+          <div class="category-list" id="filterButtons"></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Recipes Grid -->
+    <div class="container">
+      <div class="recipes-grid" id="recipesGrid"></div>
+      <div class="no-results" id="noResults" style="display: none">
+        <h3>Inga recept hittades</h3>
+        <p>Prova att justera sökningen eller filtret</p>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="recipeModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img id="modalImage" class="modal-image" src="" alt="" />
+          <button class="close-btn" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="recipe-categories" id="modalCategory"></div>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+          <div class="modal-meta">
+            <span
+              ><img src="images/clock.png" width="18" />
+              <strong id="modalTime"></strong
+            ></span>
+            <span class="serving-controls">
+              <button class="portion-btn" id="decreasePortion">-</button>
+              <span
+                style="
+                  min-width: 120px;
+                  display: inline-block;
+                  text-align: center;
+                "
+              >
+                <img src="images/food.png" width="18" />
+                <strong id="modalServings"></strong>
+              </span>
+              <button class="portion-btn" id="increasePortion">+</button>
+            </span>
+          </div>
+          <p
+            style="color: #718096; margin-bottom: 1rem"
+            id="modalDateAdded"
+          ></p>
+          <h3 class="modal-section-title">Ingredienser</h3>
+          <ul class="ingredients-list" id="modalIngredients"></ul>
+          <h3 class="modal-section-title">Instruktioner</h3>
+          <ol class="instructions-list" id="modalInstructions"></ol>
+        </div>
+      </div>
+    </div>
+
+    <script src="recipes-data.js"></script>
+    <script src="options.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

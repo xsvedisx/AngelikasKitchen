@@ -58,6 +58,18 @@ let currentFilter = "Alla";
         return amountText || "Saknas";
       }
 
+      function formatTimeLabel(value) {
+        const raw = String(value || "").trim();
+        if (!raw) return "";
+        if (/^\d+$/.test(raw)) return `${raw}m`;
+        return raw
+          .replace(/\bminuter\b/gi, "m")
+          .replace(/\bmins?\b/gi, "m")
+          .replace(/(\d+)\s*min\b/gi, "$1m")
+          .replace(/\s+/g, " ")
+          .trim();
+      }
+
       function formatAddedDate(dateValue) {
         if (!dateValue) return "Tillagd: OkÃ¤nt datum";
         const parsed = new Date(dateValue);
@@ -249,7 +261,7 @@ let currentFilter = "Alla";
             .join("");
         document.getElementById("heroTitle").textContent = recipe.title;
         document.getElementById("heroDescription").textContent = recipe.description;
-        document.getElementById("heroTime").textContent = recipe.time;
+        document.getElementById("heroTime").textContent = formatTimeLabel(recipe.time);
         document.getElementById("heroServings").textContent = getPortionLabel(recipe);
         document.getElementById("heroBtn").onclick = () => openModal(recipe);
 
@@ -434,7 +446,7 @@ let currentFilter = "Alla";
           setTimeout(() => input.focus(), 0);
         };
         const getResultLabel = (recipe) =>
-          `${recipe.time} • ${getRecipeCategoryLabels(recipe).slice(0, 2).join(", ")}`;
+          `${formatTimeLabel(recipe.time)} • ${getRecipeCategoryLabels(recipe).slice(0, 2).join(", ")}`;
 
         const renderResults = (query) => {
           if (!query) {
@@ -609,7 +621,7 @@ let currentFilter = "Alla";
                         <h3 class="recipe-title">${recipe.title}</h3>
                         <p class="recipe-description">${recipe.description}</p>
                         <div class="recipe-meta">
-                            <span><img src="images/clock.png" width="18"> ${recipe.time}</span>
+                            <span><img src="images/clock.png" width="18"> ${formatTimeLabel(recipe.time)}</span>
                             <span><img src="images/food.png" width="18"> ${getPortionLabel(recipe)}</span>
                         </div>
                     </div>
@@ -628,7 +640,7 @@ let currentFilter = "Alla";
         document.getElementById("modalTitle").textContent = recipe.title;
         document.getElementById("modalDescription").textContent =
           recipe.description;
-        document.getElementById("modalTime").textContent = recipe.time;
+        document.getElementById("modalTime").textContent = formatTimeLabel(recipe.time);
         document.getElementById("modalServings").textContent =
           getPortionLabel(recipe);
         document.getElementById("modalDateAdded").textContent = formatAddedDate(

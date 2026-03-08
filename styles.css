@@ -752,16 +752,35 @@
       .modal-meta {
         display: flex;
         gap: 2rem;
+        align-items: center;
+        flex-wrap: wrap;
         margin-bottom: 2rem;
         padding-bottom: 2rem;
         border-bottom: 2px solid var(--muted-light);
+      }
+
+      .modal-meta > span {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        white-space: nowrap;
       }
 
       .serving-controls {
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+      }
+
+      .serving-value {
+        min-width: 120px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.35rem;
+        text-align: center;
+        white-space: nowrap;
       }
 
       .portion-btn {
@@ -978,5 +997,13 @@
 
         .modal-header {
           height: 300px;
+        }
+
+        .modal-meta {
+          gap: 1rem;
+        }
+
+        .serving-value {
+          min-width: 96px;
         }
       }

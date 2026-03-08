@@ -7,7 +7,7 @@ window.RECIPES_DATA = {
       categories: ["Tillbehör", "Vegetariskt", "Dipp", "Under 15 minuter"],
       description:
         "En god och enkel Guacamole till tacos, enchiladas eller nachos.",
-      time: "15 mins",
+      time: "15",
       servings: 1.0,
       amount: "Ca 300g guacamole",
       difficulty: "Easy",
@@ -35,7 +35,7 @@ window.RECIPES_DATA = {
       categories: ["Frukost", "Under 30 minuter"],
       description:
         "Dessa Fattiga riddare är frasiga på utsidan och mjuka på insidan, och smakar som nygräddade kanelbullar! De är så goda att man egentligen inte behöver något tillbehör.",
-      time: "30 mins",
+      time: "30",
       servings: 1.5,
       amount: "1-2 portioner",
       difficulty: "Medium",
@@ -64,7 +64,7 @@ window.RECIPES_DATA = {
       category: "Mat",
       categories: ["Mat", "Fläskkött", "Grytor", "Under 60 minuter"],
       description: "En god och snabblagad fläskfilégryta.",
-      time: "40 mins",
+      time: "40",
       servings: 4.5,
       amount: "4-5 portioner",
       difficulty: "Medium",
@@ -99,7 +99,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Paj", "Under 60 minuter"],
       description:
         "En supergod och knäckig äppelpaj, bäst serverad tillsammans med vaniljglass och gärna även kolasås!",
-      time: "45 mins",
+      time: "45",
       servings: 5.5,
       amount: "5-6 portioner",
       difficulty: "Medium",
@@ -131,7 +131,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Söta tillbehör", "Under 15 minuter"],
       description:
         "En snabb och enkel kolasås som förhöjer vaniljglassen eller äppelpajen.",
-      time: "15 mins",
+      time: "15",
       servings: 1.0,
       amount: "Ca 300g kolasås",
       difficulty: "Easy",
@@ -156,7 +156,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Tillbehör", "Fläskkött", "Pasta"],
       description:
         "En underbar pastarätt med karamelliserad lök, krispigt bacon och krämig ostsås. Fantastiskt god som huvudrätt men kan också serveras som ett tillbehör.",
-      time: "70 mins",
+      time: "70",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Hard",
@@ -195,7 +195,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Muffins och cupcakes", "Under 60 minuter"],
       description:
         "Saftiga och mjuka vaniljmuffins. Lika goda på egen hand som tillsammans med frosting eller vispad grädde.",
-      time: "40 mins",
+      time: "40",
       servings: 12.0,
       amount: "12 st muffins",
       difficulty: "Medium",
@@ -232,7 +232,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Fluffiga och krämiga pannkaksmuffins som smakar minst lika ljuvligt som nygräddade pannkakor, men kräver betydligt mindre tid och ansträngning. De får naturligt en form som passar perfekt för valfri fyllning.",
-      time: "30 mins",
+      time: "30",
       servings: 12.0,
       amount: "12 st muffins",
       difficulty: "Medium",
@@ -260,7 +260,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Söta tillbehör", "Under 15 minuter"],
       description:
         "Len och fluffig vispad grädde som är så god att den går att äta med sked.",
-      time: "10 mins",
+      time: "10",
       servings: 1.0,
       amount: "Ca 5 dl vispad grädde",
       difficulty: "Easy",
@@ -291,7 +291,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En underbart krämig potatisgratäng smaksatt med vitlök. Görs bäst i en ugnssäker panna för att minimera disken efteråt.",
-      time: "60 mins",
+      time: "60",
       servings: 4.0,
       amount: "4 portioner",
       difficulty: "Hard",
@@ -320,7 +320,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Dryck", "Frukost", "Under 15 minuter"],
       description:
         "En jordgubbsmilkshake som inte bara är god och krämig, utan också innehåller en bra mängd protein. Passar perfekt efter träningspasset eller på en varm sommardag.",
-      time: "5 mins",
+      time: "5",
       servings: 2.0,
       amount: "2 portioner",
       difficulty: "Easy",
@@ -348,7 +348,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Fluffiga havreplättar som passar perfekt inför träningen eller som en mättande frukost.",
-      time: "20 mins",
+      time: "20",
       servings: 1.0,
       amount: "1 portion",
       difficulty: "Easy",
@@ -377,7 +377,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Tårta", "Påsk"],
       description:
         "Saftig morotskakebotten i tre lager fylld med en len, lätt syrlig cream cheese-frosting.",
-      time: "75 mins",
+      time: "75",
       servings: 6.0,
       amount: "6 portioner",
       difficulty: "Hard",
@@ -426,7 +426,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Krämig varm choklad med en hint av kolasmak från sötad kondenserad mjölk. Toppa gärna med en klick vispad grädde.",
-      time: "5 mins",
+      time: "5",
       servings: 1.0,
       amount: "1 portion",
       difficulty: "Easy",
@@ -450,7 +450,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Fläskkött", "Grytor", "Under 30 minuter"],
       description:
         "Fläskfilé i krämig sås med smak av mexikansk kryddblandning som varken är för mild eller för het.",
-      time: "30 mins",
+      time: "30",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Medium",
@@ -486,7 +486,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Dryck", "Frukost", "Under 15 minuter"],
       description:
         "En len och krämig milkshake med härlig smak av banan och vanilj, med betydligt mer protein än en vanlig milkshake.",
-      time: "5 mins",
+      time: "5",
       servings: 2.0,
       amount: "2 portioner",
       difficulty: "Easy",
@@ -509,7 +509,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Frukost", "Under 60 minuter"],
       description:
         "Starta dagen med denna underbara, frasiga granola. Serveras bäst med kall mjölk om du frågar mig.",
-      time: "35 mins",
+      time: "35",
       servings: 1.0,
       amount: "Ca 500g granola",
       difficulty: "Medium",
@@ -544,7 +544,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Proteinrika, fluffiga plättar som du snabbt och enkelt slänger ihop på några minuter. Trots det höga proteininnehållet är plättarna minst lika goda som vanliga plättar, om inte ännu godare!",
-      time: "20 mins",
+      time: "20",
       servings: 1.0,
       amount: "1 portion",
       difficulty: "Easy",
@@ -571,7 +571,7 @@ window.RECIPES_DATA = {
       categories: ["Tillbehör", "Röror och såser", "Under 15 minuter"],
       description:
         "Det här är min favoritsås att servera till lax. Krämig och fyllig, med en lätt syrlighet från pressad citron.",
-      time: "5 mins",
+      time: "5",
       servings: 1.0,
       amount: "Ca 400g sås",
       difficulty: "Easy",
@@ -601,7 +601,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Chokladiga och kladdiga med en krämig mitt, dessa kladdkakemuffins är drömgoda och så enkla att göra. Spritsa grädde ovanpå och servera som kladdkaka i portionsformat.",
-      time: "30 mins",
+      time: "30",
       servings: 12.0,
       amount: "12 st muffins",
       difficulty: "Medium",
@@ -629,7 +629,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Nötkött", "Pasta", "Gratänger"],
       description:
         "Det här är den godaste, krämigaste lasagnen jag någonsin ätit. Lager på lager av pasta, len bechamelsås, smält mozzarella och fyllig köttfärsröra. Vi älskar den här hemma, och det gör våra gäster också!",
-      time: "75 mins",
+      time: "75",
       servings: 9.0,
       amount: "8-10 portioner",
       difficulty: "Hard",
@@ -679,7 +679,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Choklad", "Kakor"],
       description:
         "Drömgoda kakor som är sega i kanten, mjuka i mitten, fyllda med krämig nutella och toppade med flingsalt. Prova dem, du kommer inte att ångra dig!",
-      time: "80 mins",
+      time: "80",
       servings: 20.0,
       amount: "20 st cookies",
       difficulty: "Hard",
@@ -714,7 +714,7 @@ window.RECIPES_DATA = {
       categories: ["Övrigt"],
       description:
         "För att få ut en godare och mildare smak av vitlöken, rosta den långsamt i ugn tills gyllenbrun och alldeles mjuk. Rostad vitlök kan användas som ersättare till rå vitlök i de flesta sammanhang, och höjer då oftast rätten smakmässigt.",
-      time: "70 mins",
+      time: "70",
       servings: 1.0,
       amount: "1 rostad vitlök",
       difficulty: "Hard",
@@ -735,7 +735,7 @@ window.RECIPES_DATA = {
       categories: ["Tillbehör", "Röror och såser"],
       description:
         "En len och fyllig dressing med smak av rostad vitlök. Passar utmärkt på hamburgaren eller till pommesen.",
-      time: "80 mins",
+      time: "80",
       servings: 1.0,
       amount: "Ca 250g dressing",
       difficulty: "Hard",
@@ -766,7 +766,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Nötkött", "Under 15 minuter"],
       description:
         "Läcker burgare med karamelliserad yta som blir färdig på nolltid. Serverad med frasigt smörstekt hamburgerbröd, en hemmagjord dressing på rostad vitlök, krämig smält cheddarost och bitar av rostad lök för lite crunch.",
-      time: "10 mins",
+      time: "10",
       servings: 1.0,
       amount: "1 portion",
       difficulty: "Easy",
@@ -803,7 +803,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En himmelskt god chokladbräck gjord på en kombination av mjölkchoklad och vit choklad, med bitar av daim och oreos. Toppat med flingsalt för godare smak.",
-      time: "20 mins",
+      time: "20",
       servings: 1.0,
       amount: "Ca 430g chokladbräck",
       difficulty: "Easy",
@@ -830,7 +830,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Choklad", "Glass", "Under 30 minuter"],
       description:
         "En krämig vaniljglass med bitar av seg dumlekola varvat med len dulce de leche.",
-      time: "30 mins",
+      time: "30",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -858,7 +858,7 @@ window.RECIPES_DATA = {
       categories: ["Tillbehör", "Dipp", "Under 15 minuter"],
       description:
         "Hemmagjord dipp med smak av gräddfil och lök, minst lika god som den köpta varianten.",
-      time: "5 mins",
+      time: "5",
       servings: 1.0,
       amount: "2 dl dipp",
       difficulty: "Easy",
@@ -884,7 +884,7 @@ window.RECIPES_DATA = {
       categories: ["Frukost", "Bröd", "Under 30 minuter"],
       description:
         "Ljuvliga scones med frasig yta och mjuk, saftig insida. Underbara till frukost tillsammans med smör, ost och marmelad.",
-      time: "30 mins",
+      time: "30",
       servings: 8.0,
       amount: "8 st scones",
       difficulty: "Medium",
@@ -916,7 +916,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Tårta", "Midsommar"],
       description:
         "En underbart somrig tårta med mjuk sockerkaksbotten och segfrasig maräng, fluffig grädde och färska jordgubbar.",
-      time: "90 mins",
+      time: "90",
       servings: 6.0,
       amount: "6 portioner",
       difficulty: "Hard",
@@ -954,7 +954,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Fläskkött", "Pasta", "Under 30 minuter"],
       description:
         "Rökt skinka och tortellini i krämig sås med smak av vitlök och parmesan.",
-      time: "30 mins",
+      time: "30",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -987,7 +987,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Fläskkött", "Paj"],
       description:
         "En läcker paj med smakrik fyllning gjord på rökt skinka, smält ost och purjolök, omslutet av ett frasigt pajskal.",
-      time: "90 mins",
+      time: "90",
       servings: 6.0,
       amount: "6 portioner",
       difficulty: "Hard",
@@ -1027,7 +1027,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Choklad", "Glass", "Under 30 minuter"],
       description:
         "Hemmagjord daimglass som är mycket godare än den köpta varianten. Med ännu mer daim - för jag är så trött på att den snålas med!",
-      time: "30 mins",
+      time: "30",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -1054,7 +1054,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Choklad", "Kakor"],
       description:
         "Underbara cookies med seg kant och mjuk mitt, som blir allra godast om man låter kakdegen stå och dra ihop sig i kylen flera timmar innan gräddning.",
-      time: "80 mins",
+      time: "80",
       servings: 16.0,
       amount: "16 st kakor",
       difficulty: "Hard",
@@ -1087,7 +1087,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Nötkött", "Jul", "Påsk", "Midsommar"],
       description:
         "Smarriga köttbullar som passar utmärkt till julbordet, och minst lika bra till påsk eller midsommar!",
-      time: "70 mins",
+      time: "70",
       servings: 90.0,
       amount: "Ca 90 st köttbullar",
       difficulty: "Hard",
@@ -1119,7 +1119,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Nötkött", "Under 60 minuter"],
       description:
         "Hemmagjorda enchiladas med svarta bönor och fyllig enchiladasås med lagom hetta, bäst serverade med kall creme fraiche!",
-      time: "60 mins",
+      time: "60",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Hard",
@@ -1166,7 +1166,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Fluffiga amerikanska pannkakor som blir färdiga på nolltid.",
-      time: "20 mins",
+      time: "20",
       servings: 2.0,
       amount: "2 portioner",
       difficulty: "Easy",
@@ -1195,7 +1195,7 @@ window.RECIPES_DATA = {
       category: "Mat",
       categories: ["Mat", "Fläskkött", "Under 30 minuter"],
       description: "Snabb och enkel vardagsmat som hela familjen gillar.",
-      time: "30 mins",
+      time: "30",
       servings: 6.0,
       amount: "5-7 portioner",
       difficulty: "Medium",
@@ -1229,7 +1229,7 @@ window.RECIPES_DATA = {
       categories: ["Frukost", "Under 30 minuter"],
       description:
         "En läcker havregrynsgröt med äppelbitar stekta i smör, socker och kanel. Perfekt som en god, mättande frukost eller inför träningen.",
-      time: "25 mins",
+      time: "25",
       servings: 1.0,
       amount: "1 portion",
       difficulty: "Medium",
@@ -1259,7 +1259,7 @@ window.RECIPES_DATA = {
       category: "Tillbehör",
       categories: ["Tillbehör", "Dipp", "Under 15 minuter"],
       description: "En hemmagjord variant av OLWs klassiska Fresh island dipp.",
-      time: "5 mins",
+      time: "5",
       servings: 1.0,
       amount: "2 dl dipp",
       difficulty: "Easy",
@@ -1290,7 +1290,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En enkel, söt och fluffig ugnspannkaka som går hem hos både barn och vuxna.",
-      time: "40 mins",
+      time: "40",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Medium",
@@ -1318,7 +1318,7 @@ window.RECIPES_DATA = {
       categories: ["Dryck", "Under 60 minuter"],
       description:
         "Hemgjord lemonad är en härligt läskande sommardryck med äkta smak av citron, mycket godare än blandsaft!",
-      time: "60 mins",
+      time: "60",
       servings: 1.0,
       amount: "Ca 1 liter lemonad",
       difficulty: "Hard",
@@ -1350,7 +1350,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En enkel men ack så god och fyllig potatissallad, ett klassiskt tillbehör till sommarens alla grillfester!",
-      time: "120 mins",
+      time: "120",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Hard",
@@ -1377,7 +1377,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Nötkött", "Grytor", "Under 60 minuter"],
       description:
         "En läcker, fyllig variant på Biff stroganoff med nötfärs istället för diverse bitar av nötkött. Servera med valfritt tillbehör.",
-      time: "45 mins",
+      time: "45",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -1409,7 +1409,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Choklad", "Glass", "Under 60 minuter"],
       description:
         "En favoritglass här hemma med smak av daim, oreos och vit choklad!",
-      time: "40 mins",
+      time: "40",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -1436,7 +1436,7 @@ window.RECIPES_DATA = {
       categories: ["Tillbehör", "Röror och såser", "Under 15 minuter"],
       description:
         "Det är allmänt känt att citron passar bra till fisk. Denna härliga, lätt syrliga citronsås är inget undantag!",
-      time: "15 mins",
+      time: "15",
       servings: 1.0,
       amount: "Ca 3 dl sås",
       difficulty: "Easy",
@@ -1462,7 +1462,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Nötkött", "Grytor", "Under 30 minuter"],
       description:
         "En mustig köttfärssås med en mexikansk touch, väldigt populär här hemma!",
-      time: "30 mins",
+      time: "30",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -1497,7 +1497,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Choklad", "Söta tillbehör", "Under 15 minuter"],
       description:
         "Vit choklad i flytande form, gott till glass och olika desserter.",
-      time: "5 mins",
+      time: "5",
       servings: 1.0,
       amount: "Ca 200g sås",
       difficulty: "Easy",
@@ -1521,7 +1521,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Krispiga och chokladiga cornflakesbitar som smakar alldeles ljuvligt.",
-      time: "20 mins",
+      time: "20",
       servings: 12.0,
       amount: "12 st bitar",
       difficulty: "Easy",
@@ -1554,7 +1554,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En underbart krämig gratäng med len ostsås och rökt skinka.",
-      time: "60 mins",
+      time: "60",
       servings: 9.0,
       amount: "8-10 portioner",
       difficulty: "Hard",
@@ -1591,7 +1591,7 @@ window.RECIPES_DATA = {
       categories: ["Tillbehör", "Röror och såser", "Under 15 minuter"],
       description:
         "En härligt gräddig och fyllig sås som bara måste finnas på bordet när det serveras bland annat köttbullar, pannbiff och köttfärslimpa.",
-      time: "15 mins",
+      time: "15",
       servings: 1.0,
       amount: "Ca 4 dl sås",
       difficulty: "Easy",
@@ -1615,7 +1615,7 @@ window.RECIPES_DATA = {
       category: "Mat",
       categories: ["Mat", "Nötkött", "Grytor", "Under 60 minuter"],
       description: "Snabb och enkel vardagsmat som hela familjen tycker om.",
-      time: "40 mins",
+      time: "40",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -1654,7 +1654,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En svensk klassiker, en underbart kladdig och chokladig kaka som bäst serveras med fluffig grädde. Allra bäst blir den om man ger den tid att sätta sig efter gräddning - helst ska den få stå i kyl över natten.",
-      time: "30 mins",
+      time: "30",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -1689,7 +1689,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Fluffig grädde smaksatt med sommarens godaste bär. God att äta som den är eller som ett tillbehör till något annat.",
-      time: "40 mins",
+      time: "40",
       servings: 1.0,
       amount: "Ca 3.5 dl grädde",
       difficulty: "Medium",
@@ -1715,7 +1715,7 @@ window.RECIPES_DATA = {
       categories: ["Övrigt", "Under 15 minuter"],
       description:
         "Fördelen med skirat smör är att det tål högre temperaturer och har längre hållbarhet än vanligt smör. Skirat smör innehåller endast smörfettet, till skillnad från vanligt smör som även består av vatten och mjölkfastämnen.",
-      time: "15 mins",
+      time: "15",
       servings: 1.0,
       amount: "Ca 150-175g skirat smör",
       difficulty: "Easy",
@@ -1735,7 +1735,7 @@ window.RECIPES_DATA = {
       categories: ["Snacks", "Under 30 minuter"],
       description:
         "Underbart smöriga och salta hemmabio-popcorn som man inte kan sluta äta av.",
-      time: "20 mins",
+      time: "20",
       servings: 1.0,
       amount: "Ca 2 liter popcorn",
       difficulty: "Easy",
@@ -1767,7 +1767,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Makaroner i krämig ostsås med ett krispigt täcke av panko. Anpassa mängden efter hur många som ska äta, eftersom mac and cheese bör ätas inom kort från tillagning för bästa smak och konsistens.",
-      time: "35 mins",
+      time: "35",
       servings: 2.5,
       amount: "2-3 portioner",
       difficulty: "Medium",
@@ -1808,7 +1808,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Frukost", "Under 60 minuter"],
       description:
         "En hemgjord kopia på den klassiska Risifruttin - risgrynsgröt med extra grädde och socker, som får kallna helt innan servering. Gott på egen hand eller tillsammans med din favoritsylt!",
-      time: "50 mins",
+      time: "50",
       servings: 1.0,
       amount: "Ca 1500g risifrutti",
       difficulty: "Medium",
@@ -1843,7 +1843,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En riktigt god kall, krämig pastasallad med smak av curry, äpple och paprika. Serveras med fördel till kyckling, men är minst lika god som tillbehör till kött.",
-      time: "60 mins",
+      time: "60",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Hard",
@@ -1875,7 +1875,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Söta tillbehör", "Under 30 minuter"],
       description:
         "En himmelsk kolass gjord p karamelliserat socker. Frestll dig en kolass gjord p smlta Werthers-kolor, hur gott lter inte det?",
-      time: "30 mins",
+      time: "30",
       servings: 1.0,
       amount: "Ca 3.5 dl sås",
       difficulty: "Medium",
@@ -1904,7 +1904,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Söta tillbehör", "Under 15 minuter"],
       description:
         "En underbar, fluffig vaniljgrädde som är det perfekta tillbehöret till dina smulpajer! Skippa den köpta varianten och släng ihop en egen vaniljvisp på nolltid.",
-      time: "10 mins",
+      time: "10",
       servings: 1.0,
       amount: "Ca 5-6 dl vaniljvisp",
       difficulty: "Easy",
@@ -1935,7 +1935,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Lent, fluffigt och underbart gott potatismos smaksatt med vitlök och färskost.",
-      time: "45 mins",
+      time: "45",
       servings: 4.5,
       amount: "4-5 portioner",
       difficulty: "Medium",
@@ -1971,7 +1971,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En snabb, enkel och fräsch pastasallad som mättar många. Servera som tillbehör eller gör en komplett sallad genom att slänga i bitar av exempelvis kött, kyckling eller skinka.",
-      time: "20 mins",
+      time: "20",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Easy",
@@ -2000,7 +2000,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Nötkött", "Potatis", "Gratänger"],
       description:
         "En läcker gratäng med krämig potatis, smält ost och smakrik köttfärsröra som hela familjen tycker om.",
-      time: "100 mins",
+      time: "100",
       servings: 9.0,
       amount: "8-10 portioner",
       difficulty: "Hard",
@@ -2039,7 +2039,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Dryck", "Jul", "Under 30 minuter"],
       description:
         "En himmelskt god juldrink som hela familjen kan njuta av. Smak och konsistens som påminner om smält vaniljglass med en touch av julkrydda.",
-      time: "30 mins",
+      time: "30",
       servings: 1.0,
       amount: "Ca 1.25 liter",
       difficulty: "Medium",
@@ -2074,7 +2074,7 @@ window.RECIPES_DATA = {
         "Under 30 minuter",
       ],
       description: "Ljuvligt krämiga chokladbollar som är så barnsligt goda!",
-      time: "30 mins",
+      time: "30",
       servings: 12.0,
       amount: "12 st chokladbollar",
       difficulty: "Medium",
@@ -2108,7 +2108,7 @@ window.RECIPES_DATA = {
         "Midsommar",
       ],
       description: "Underbart krämig och god Jansson på mammas vis.",
-      time: "120 mins",
+      time: "120",
       servings: 8.0,
       amount: "8 portioner",
       difficulty: "Hard",
@@ -2141,7 +2141,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En himmelsk dessert med frasig digestivebotten, len dulce de leche och mjuka bananskivor, toppad med fluffig grädde och daimbitar.",
-      time: "45 mins",
+      time: "45",
       servings: 8.0,
       amount: "8 portioner",
       difficulty: "Medium",
@@ -2175,7 +2175,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En variant av ägghalvor där äggulan mosas och blandas med majonnäs till en krämig fyllning. Ett mumsigt tillbehör till jul, påsk eller midsommar.",
-      time: "30 mins",
+      time: "30",
       servings: 12.0,
       amount: "12 st ägghalvor",
       difficulty: "Medium",
@@ -2207,7 +2207,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En ljuvlig variant av den klassiska kladdkakan, med julig smak av vit choklad och saffran.",
-      time: "30 mins",
+      time: "30",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -2245,7 +2245,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Mumsiga rutor av segkrispig botten med smak av jordnötssmör, toppat med ett lent lager mjölkchoklad.",
-      time: "30 mins",
+      time: "30",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -2279,7 +2279,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Spröd kola med smak av mandel eller pekan, toppat med choklad och flingsalt. Ett försvinnande gott julgodis som hela familjen kan njuta av! Om du använder mandel påminner Toffee om en variant av hemgjord Daim.",
-      time: "60 mins",
+      time: "60",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Hard",
@@ -2311,7 +2311,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Godis", "Jul", "Under 30 minuter"],
       description:
         "Len, segmjuk och söt kola som kompletteras med lite flingsalt för ännu godare smak.",
-      time: "30 mins",
+      time: "30",
       servings: 50.0,
       amount: "Ca 40-60 st kolor",
       difficulty: "Medium",
@@ -2339,7 +2339,7 @@ window.RECIPES_DATA = {
       categories: ["Övrigt", "Under 15 minuter"],
       description:
         "Hemgjord tacokrydda går snabbt och enkelt att slänga ihop och blir minst lika gott (om inte godare) som köpt kryddmix. Gör man kryddblandningen själv har man också möjligheten att justera exempelvis hettan och sältan.",
-      time: "5 mins",
+      time: "5",
       servings: 1.0,
       amount: "1 sats (räcker till 1000g färs)",
       difficulty: "Easy",
@@ -2367,7 +2367,7 @@ window.RECIPES_DATA = {
       categories: ["Tillbehör", "Röror och såser", "Under 15 minuter"],
       description:
         "En jättegod mildsås som är det perfekta tillbehöret till exempelvis tacos eller kebab.",
-      time: "15 mins",
+      time: "15",
       servings: 1.0,
       amount: "Ca 3 dl sås",
       difficulty: "Easy",
@@ -2392,7 +2392,7 @@ window.RECIPES_DATA = {
       categories: ["Övrigt", "Under 15 minuter"],
       description:
         "Att göra en egen italiensk salladskrydda är busenkelt och ger möjligheten att justera mängden salt i kryddblandningen.",
-      time: "10 mins",
+      time: "10",
       servings: 1.0,
       amount: "Ca 3 msk kryddblandning",
       difficulty: "Easy",
@@ -2424,7 +2424,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Smaken och konsistensen på dessa beskrivs bäst som sockerkaka i pannkaksformat, stekt i smör och doppad i strösocker. Goda både med och utan tillbehör.",
-      time: "30 mins",
+      time: "30",
       servings: 4.0,
       amount: "4 portioner",
       difficulty: "Medium",
@@ -2456,7 +2456,7 @@ window.RECIPES_DATA = {
       categories: ["Övrigt", "Under 60 minuter"],
       description:
         "Mumsiga bars med segkladdig konsistens och mycket protein, ät dem som de är eller tillsammans med glass för en proteinrik efterrätt.",
-      time: "45 mins",
+      time: "45",
       servings: 5.0,
       amount: "5 portioner",
       difficulty: "Medium",
@@ -2486,7 +2486,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Kyckling", "Grytor", "Under 30 minuter"],
       description:
         "En smakrik och lagom het kycklinggryta som du slänger ihop på nolltid.",
-      time: "30 mins",
+      time: "30",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Medium",
@@ -2522,7 +2522,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Choklad", "Söta tillbehör", "Under 15 minuter"],
       description:
         "En ljuvligt god chokladsås som passar perfekt till vaniljglassen.",
-      time: "10 mins",
+      time: "10",
       servings: 1.0,
       amount: "Ca 3 dl chokladsås",
       difficulty: "Easy",
@@ -2548,7 +2548,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Tillbehör", "Vegetariskt", "Potatis"],
       description:
         "Ugnsrostade rotfrukter är ett flexibelt tillbehör som är både gott och nyttigt. Nedanstående recept är baserat på vad vi själva föredrar, men ingredienserna går förstås att variera i oändlighet.",
-      time: "70 mins",
+      time: "70",
       servings: 4.5,
       amount: "4-5 portioner",
       difficulty: "Hard",
@@ -2576,7 +2576,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Fläskkött", "Potatis", "Gratänger"],
       description:
         "Krämig potatisgratäng i ostsås med smak av rökt skinka, en enkel vardagsrätt som hela familjen gillar.",
-      time: "75 mins",
+      time: "75",
       servings: 6.0,
       amount: "6 portioner",
       difficulty: "Hard",
@@ -2608,7 +2608,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Paj", "Under 60 minuter"],
       description:
         "Min himmelskt goda äppelsmulpaj med generösa mängder frasigt smul ovanpå mjuka kaneläppelbitar. Serveras bäst med vaniljvisp eller vaniljsås.",
-      time: "45 mins",
+      time: "45",
       servings: 6.0,
       amount: "5-7 portioner",
       difficulty: "Medium",
@@ -2637,7 +2637,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Paj", "Under 60 minuter"],
       description:
         "Sprött, ljuvligt havresmul toppar denna underbara äppelpaj. Jag kan inte välja mellan smul med havre eller utan havre, utan båda är så fantastiskt goda att de förtjänar varsin plats i min receptsamling.",
-      time: "45 mins",
+      time: "45",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Medium",
@@ -2674,7 +2674,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Detta är en magiskt god dessert med den klassiska kombinationen av banan, grädde och kolasås, kompletterat med frasiga digestivekex och daimbitar.",
-      time: "25 mins",
+      time: "25",
       servings: 2.0,
       amount: "2 portioner",
       difficulty: "Medium",
@@ -2700,7 +2700,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Kyckling", "Under 60 minuter"],
       description:
         "Höj den något tråkiga kycklingen med krämig färskost och bacon. Lyxig vardagsmat som du slänger ihop på en halvtimme och därefter sköter den sig själv i ugnen.",
-      time: "60 mins",
+      time: "60",
       servings: 4.5,
       amount: "4-5 portioner",
       difficulty: "Hard",
@@ -2726,7 +2726,7 @@ window.RECIPES_DATA = {
       categories: ["Tillbehör", "Bröd", "Under 30 minuter"],
       description:
         "Underbart frasigt bröd med smak av vitlök, smör och persilja. Går otroligt snabbt att göra och älskas av många, men tänk på att äta upp brödet inom kort innan det förlorar sin härliga konsistens.",
-      time: "20 mins",
+      time: "20",
       servings: 4.5,
       amount: "4-5 portioner",
       difficulty: "Easy",
@@ -2750,7 +2750,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Kyckling", "Röror och såser", "Under 60 minuter"],
       description:
         "Det här är den godaste currykycklingröran att fylla brödet med. Den tar lite tid att göra, men är väl värd väntan.",
-      time: "50 mins",
+      time: "50",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Medium",
@@ -2789,7 +2789,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Kyckling", "Grytor", "Under 60 minuter"],
       description:
         "Kyckling i en mumsig chiligräddsås med bananskivor, krispigt bacon och knapriga salta jordnötter. En klassisk svensk kycklingrätt som aldrig slår fel.",
-      time: "45 mins",
+      time: "45",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Medium",
@@ -2822,7 +2822,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Kyckling", "Grytor", "Under 60 minuter"],
       description:
         "God, enkel och snabblagad currykyckling med en touch av paprika och äpple. Perfekt när du har ont om tid och inte har lust att diska mer än nödvändigt.",
-      time: "45 mins",
+      time: "45",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Medium",
@@ -2855,7 +2855,7 @@ window.RECIPES_DATA = {
       category: "Sötsaker",
       categories: ["Sötsaker", "Choklad", "Kakor", "Under 60 minuter"],
       description: "Underbara frasiga havrekakor toppade med choklad.",
-      time: "50 mins",
+      time: "50",
       servings: 20.0,
       amount: "20 st kakor",
       difficulty: "Medium",
@@ -2883,7 +2883,7 @@ window.RECIPES_DATA = {
       categories: ["Tillbehör", "Röror och såser", "Under 15 minuter"],
       description:
         "God och enkel hemgjord dressing till dina hamburgare, pommes eller korvar.",
-      time: "5 mins",
+      time: "5",
       servings: 1.0,
       amount: "2.5 dl dressing",
       difficulty: "Easy",
@@ -2908,7 +2908,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Sockerkaka", "Under 60 minuter"],
       description:
         "En ljuvligt god och saftig sockerkaka som alla tycker om. Den må vara enkel, men är saftigare än de flesta andra varianter och har en underbar smak av vanilj.",
-      time: "45 mins",
+      time: "45",
       servings: 6.0,
       amount: "6 portioner",
       difficulty: "Medium",
@@ -2939,7 +2939,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Nötkött", "Under 60 minuter"],
       description:
         "Smakrika, saftiga burgare till sommarens grillfester. Para ihop med alla dina favorittillbehör!",
-      time: "60 mins",
+      time: "60",
       servings: 14.0,
       amount: "14 st burgare",
       difficulty: "Hard",
@@ -2970,7 +2970,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Nötkött"],
       description:
         "Köttfärslimpa är smidig vardagsmat som går snabbt att slänga ihop och därefter sköter den sig själv i ugnen. Den här limpan är baconlindad och fylld med krämig färskost, en lyxigare variant av den klassiska rätten!",
-      time: "80 mins",
+      time: "80",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Hard",
@@ -3005,7 +3005,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Söta tillbehör", "Under 30 minuter"],
       description:
         "En len och krämig hemmagjord vaniljkräm som smakar fantastiskt gott och är superenkel att göra. Den tar bara 20 minuter av din tid (och därefter lite tålamod medan man väntar på att den ska kylas ned). Skippa den köpta varianten och prova detta istället!",
-      time: "20 mins",
+      time: "20",
       servings: 1.0,
       amount: "Ca 3.5 dl vaniljkräm",
       difficulty: "Easy",
@@ -3035,7 +3035,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Kyckling", "Under 60 minuter"],
       description:
         "Den här kycklinggrytan är vansinnigt god och smakrik med en perfekt kombination av sötma, sälta och hetta.",
-      time: "50 mins",
+      time: "50",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Medium",
@@ -3072,7 +3072,7 @@ window.RECIPES_DATA = {
       categories: ["Tillbehör", "Röror och såser", "Under 15 minuter"],
       description:
         "Tzatziki är det perfekta tillbehöret till sommarens grillat. En fräsch och krämig blandning av grekisk yoghurt, vitlök och gurka. Jag gillar att lyxa till den med cream cheese, vilket enligt mig höjer smakerna ytterligare!",
-      time: "15 mins",
+      time: "15",
       servings: 3.5,
       amount: "3-4 portioner",
       difficulty: "Easy",
@@ -3099,7 +3099,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Godis", "Jul", "Under 60 minuter"],
       description:
         "Jag älskar de kanderade mandlarna som finns i naturgodisets lösvikt, och har på senare år försökt återskapa dessa hemmavid. Efter rigoröst testande har jag landat i att detta är den bästa och enklaste metoden, och mandlarna smakar alldeles ljuvligt!",
-      time: "45 mins",
+      time: "45",
       servings: 1.0,
       amount: "Ca 280g kanderade mandlar",
       difficulty: "Medium",
@@ -3128,7 +3128,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Frukost", "Under 15 minuter"],
       description:
         "När du inte har tid eller lust att koka risgrynsgröt för att göra en hemgjord Risifrutti, gör istället en Kesofrutti. Den är färdig på nolltid, innehåller betydligt mer protein och mättar ännu bättre!",
-      time: "5 mins",
+      time: "5",
       servings: 2.5,
       amount: "2-3 portioner",
       difficulty: "Easy",
@@ -3152,7 +3152,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Fläskkött", "Sallad", "Under 60 minuter"],
       description:
         "Snart är sommaren här igen och då tenderar man att bli sugen på kalla maträtter. Det här är en god och enkel ost- och skinksallad som är både nyttig och mättande.",
-      time: "45 mins",
+      time: "45",
       servings: 6.5,
       amount: "5-8 portioner",
       difficulty: "Medium",
@@ -3186,7 +3186,7 @@ window.RECIPES_DATA = {
       categories: ["Dryck", "Under 60 minuter"],
       description:
         "Föreställ dig en sötsyrlig, kall dryck med smak som påminner om den klassiska Twister-glassen. Om du tycker att detta låter gott måste du testa denna ljuvliga lemonad!",
-      time: "60 mins",
+      time: "60",
       servings: 1.0,
       amount: "Ca 1 liter",
       difficulty: "Hard",
@@ -3216,7 +3216,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Det här är ett enkelt och klassiskt recept på frasvåfflor som vi använder för att lyxa till helgfrukosten.",
-      time: "45 mins",
+      time: "45",
       servings: 8.0,
       amount: "8 st våfflor",
       difficulty: "Medium",
@@ -3241,7 +3241,7 @@ window.RECIPES_DATA = {
       categories: ["Tillbehör", "Sallad", "Under 30 minuter"],
       description:
         "Den finaste salladen du kan servera i sommar. Det bästa med den här salladen är kombinationen av saftig, söt vattenmelon och krämig, salt fetaost!",
-      time: "20 mins",
+      time: "20",
       servings: 4.5,
       amount: "4-5 portioner",
       difficulty: "Easy",
@@ -3266,7 +3266,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Glass", "Under 60 minuter"],
       description:
         "Har du ngon gng tit Ben & Jerrys Strawberry cheesecake-glass? Jag tnkte frska terskapa den hemma, men istllet rkade det bli en mycket, mycket godare glass. Det hr kan faktiskt vara den bsta glassen du ter i sommar!",
-      time: "60 mins",
+      time: "60",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Hard",
@@ -3305,7 +3305,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Drömmigt frasiga våfflor som är lite nyttigare än vanliga våfflor och minst lika goda (om inte lite godare!).",
-      time: "45 mins",
+      time: "45",
       servings: 10.0,
       amount: "10 st våfflor",
       difficulty: "Medium",
@@ -3331,7 +3331,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Nötkött"],
       description:
         "Klassiska svenska pannbiffar förhöjda av en skvätt japansk sojasås. Serveras bäst med gräddsås och potatis förstås!",
-      time: "70 mins",
+      time: "70",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Hard",
@@ -3365,7 +3365,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Frukost", "Under 60 minuter"],
       description:
         "En riktigt lyxig granola med frasig rostad havre, knapriga hasselnötter och len mjölkchoklad. Passar perfekt till helgfrukosten - unna dig själv eller överraska någon annan med denna ljuvliga granola!",
-      time: "40 mins",
+      time: "40",
       servings: 1.0,
       amount: "Ca 700g granola",
       difficulty: "Medium",
@@ -3400,7 +3400,7 @@ window.RECIPES_DATA = {
       categories: ["Tillbehör", "Övrigt", "Under 15 minuter"],
       description:
         "En enkel majonnäs med tjock och krämig konsistens som du slänger ihop på nolltid med hjälp av en stavmixer. Både billigare och godare än den köpta varianten!",
-      time: "5 mins",
+      time: "5",
       servings: 1.0,
       amount: "Ca 2.4 dl",
       difficulty: "Easy",
@@ -3427,7 +3427,7 @@ window.RECIPES_DATA = {
       categories: ["Frukost", "Under 15 minuter"],
       description:
         'Overnight oats är en slags kall havregrynsgröt som du förbereder på kvällen och njuter av under morgonen därpå (perfekt frukostmat för den morgontrötte). Denna variant är så himla god att den nästan får klassas som en dessert. Serveras med valfria tillbehör, jag föredrar att äta den som en "strawberry cheesecake"-gröt.',
-      time: "5 mins",
+      time: "5",
       servings: 2.0,
       amount: "2 portioner",
       difficulty: "Easy",
@@ -3454,7 +3454,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Kyckling", "Under 60 minuter"],
       description:
         "Smaskiga wraps med krämig currydressing, krispiga grönsaker och möra kycklingbitar. Detta går snabbt att göra, är nyttigt (beroende på mängden dressing) och smakar alldeles ljuvligt. Vi ser fram emot att äta dessa på en picknickfilt i sommar!",
-      time: "60 mins",
+      time: "60",
       servings: 6.0,
       amount: "6 st wraps",
       difficulty: "Hard",
@@ -3497,7 +3497,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Söta tillbehör", "Under 15 minuter"],
       description:
         "En söt och god topping som vi framförallt använder till cheesecake, men den är minst lika god till t.ex. gröt, pannkakor, fattiga riddare och våfflor. På bilden har jag tunnat ut den med några teskedar vatten för att få den rinnande, men receptet ger en konsistens som påminner mer om sylt.",
-      time: "15 mins",
+      time: "15",
       servings: 1.0,
       amount: "Ca 2.5 dl jordgubbstopping",
       difficulty: "Easy",
@@ -3525,7 +3525,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Paj", "Under 60 minuter"],
       description:
         "Den här blåbärspajen är gjord med samma smet som min knäckiga äppelpaj och smakar alldeles underbart! Serveras förslagsvis med vaniljglass.",
-      time: "45 mins",
+      time: "45",
       servings: 5.5,
       amount: "5-6 portioner",
       difficulty: "Medium",
@@ -3557,7 +3557,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Vegetariskt", "Soppa", "Under 30 minuter"],
       description:
         "Gör godaste tomatsoppan på mindre än en halvtimme. Bra och enkel vardagsmat, gärna serverat med ostmacka för lite protein.",
-      time: "25 mins",
+      time: "25",
       servings: 4.5,
       amount: "4-5 portioner",
       difficulty: "Medium",
@@ -3588,7 +3588,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Muffins och cupcakes"],
       description:
         "Mumsiga semmelmuffins med hemgjord rostad mandelmassa (du kommer aldrig vilja köpa färdig mandelmassa igen!). En snabbare variant än den klassiska semlan, men minst lika god!",
-      time: "90 mins",
+      time: "90",
       servings: 12.0,
       amount: "12 st muffins",
       difficulty: "Hard",
@@ -3635,7 +3635,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Nötkött", "Gratänger", "Under 60 minuter"],
       description:
         "Tacofärs toppad med ett krämigt täcke som gratineras i ugn. Tillagas i en enda panna och kan även serveras direkt i pannan (med eller utan grönsaker) som en dipp för dina nachochips.",
-      time: "40 mins",
+      time: "40",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Medium",
@@ -3673,7 +3673,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Kyckling", "Pasta", "Gratänger", "Under 60 minuter"],
       description:
         'En superkrämig pastarätt med kyckling och champinjoner i en smakrik len ostsås. Traditionellt brukar man toppa den "färdiga" rätten med ost och gratinera i ugn, jag har gjort båda varianter och föredrar att skippa detta steg och äta den direkt istället!',
-      time: "50 mins",
+      time: "50",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -3725,7 +3725,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "Det här är utan tvekan den godaste cheesecaken jag någonsin ätit. En krispig botten med brynt smör och lite salt. Len, krämig fyllning som bara smälter i munnen. Ovanpå detta, en kladdig kolasås med (återigen) smak av brynt smör och salt, och sist men inte minst - crunchiga rostade pekannötter. Herregud vad gott detta är, du måste prova!",
-      time: "60 mins",
+      time: "60",
       servings: 9.0,
       amount: "8-10 portioner",
       difficulty: "Hard",
@@ -3765,7 +3765,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Kyckling", "Pasta", "Under 60 minuter"],
       description:
         "En krämig och alldeles underbar pastarätt med smaker av Italien i form av soltorkade tomater, parmesan och vitlök. Passar bra både i vardagen och när man har fint besök!",
-      time: "45 mins",
+      time: "45",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -3805,7 +3805,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Baka utan ugn", "Under 60 minuter"],
       description:
         "Banoffee pie i en lite annorlunda tappning. Innehller samma goda smaker (med valfritt tillgg av frskost fr mer krmighet) men kan vara lite roligare att servera. Varfr inte som en efterrtt till Lasagne?",
-      time: "50 mins",
+      time: "50",
       servings: 8.0,
       amount: "8 portioner",
       difficulty: "Medium",
@@ -3844,7 +3844,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En lyxigare kladdkaka med brynt smör och choklad som blir så otroligt god. Jag håller mig vanligtvis till den kortare gräddningstiden (ca 10-12 minuter) - för jag vill ha min kladdkaka kladdig! På bilden är kakan gräddad någon minut längre än så, men det är verkligen ingen torr kaka för det.",
-      time: "35 mins",
+      time: "35",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",
@@ -3874,7 +3874,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Nötkött", "Under 60 minuter"],
       description:
         "En riktigt maffig macka med rostbiff, smält ost, sötsyrlig picklad rödlök, het jalapeño, krämig avokado och saftig tomat - omslutet av frasigt smörstekt bröd. Den är lätt att äta men svår att äta snyggt.",
-      time: "45 mins",
+      time: "45",
       servings: 2.0,
       amount: "2 portioner",
       difficulty: "Medium",
@@ -3915,7 +3915,7 @@ window.RECIPES_DATA = {
       categories: ["Frukost", "Choklad", "Under 15 minuter"],
       description:
         "Ljuvligt krämiga overnight oats toppade med ett lent lager smält kinderchoklad. Det här smakar som en dessert men innehåller hela 37 gram protein per portion (550 kalorier).",
-      time: "10 mins",
+      time: "10",
       servings: 2.0,
       amount: "2 portioner",
       difficulty: "Easy",
@@ -3943,7 +3943,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Fläskkött", "Pasta", "Under 60 minuter"],
       description:
         "En superenkel, krämig pastarätt som du slänger ihop i en enda panna (one-pot). Utmärkt snabb vardagsmat och håller sig krämig i matlådan också! Använd valfri korv som du tycker är god, jag byter ibland ut chorizon mot en bra kabanoss.",
-      time: "45 mins",
+      time: "45",
       servings: 5.0,
       amount: "4-6 portioner",
       difficulty: "Medium",
@@ -3979,7 +3979,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Kyckling", "Pasta", "Under 60 minuter"],
       description:
         "En krämig, smakrik pastarätt med hemgjord cajunkrydda, paprika, färska tomater och parmesanost.",
-      time: "60 mins",
+      time: "60",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Hard",
@@ -4034,7 +4034,7 @@ window.RECIPES_DATA = {
       ],
       description:
         "En barnsligt god och enkel efterrätt med kladdig dumlesås, sega kolor, len grädde och en mjuk donut.",
-      time: "25 mins",
+      time: "25",
       servings: 2.0,
       amount: "2 portioner",
       difficulty: "Medium",
@@ -4062,7 +4062,7 @@ window.RECIPES_DATA = {
       categories: ["Sötsaker", "Dryck", "Under 15 minuter"],
       description:
         "En riktigt somrig, söt och kall milkshake som svalkar och släcker törsten på soliga dagar.",
-      time: "10 mins",
+      time: "10",
       servings: 2.5,
       amount: "2-3 portioner",
       difficulty: "Easy",
@@ -4087,7 +4087,7 @@ window.RECIPES_DATA = {
       categories: ["Mat", "Fläskkött", "Pasta", "Under 30 minuter"],
       description:
         "En superenkel, god och krämig pasta som går väldigt snabbt att göra. Funkar både som lyxig vardagsmat och när du får finbesök.",
-      time: "30 mins",
+      time: "30",
       servings: 7.0,
       amount: "6-8 portioner",
       difficulty: "Medium",

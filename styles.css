@@ -877,6 +877,18 @@
           font-size: 1.5rem;
         }
 
+        .hero {
+          padding: 0 1rem;
+        }
+
+        .top-controls {
+          padding: 0 1rem;
+        }
+
+        .container {
+          padding: 1rem;
+        }
+
         .hero-content {
           min-height: 0;
         }
@@ -887,11 +899,39 @@
         }
 
         .hero-title {
-          font-size: 2rem;
+          font-size: 1.75rem;
+        }
+
+        .hero-description {
+          font-size: 0.96rem;
+          line-height: 1.55;
+          margin-bottom: 1.25rem;
+        }
+
+        .hero-badge {
+          top: 1rem;
+          left: 1rem;
+          font-size: 0.72rem;
+          padding: 0.35rem 0.85rem;
+        }
+
+        .hero-meta {
+          gap: 0.7rem;
+          margin-bottom: 1.25rem;
+        }
+
+        .hero-meta span {
+          font-size: 0.86rem;
+          padding: 0.3rem 0.62rem;
+        }
+
+        .hero .recipe-category {
+          font-size: 0.56rem;
+          padding: 0.16rem 0.42rem;
         }
 
         .hero-text {
-          padding: 2rem;
+          padding: 1.35rem;
         }
 
         .hero-carousel-title {

@@ -24,6 +24,7 @@ let currentFilter = "Alla";
 
           createFilterButtons();
           initNavbarSearch();
+          initNavbarStickyBehavior();
           filterAndDisplay(
             document.getElementById("searchInput").value.toLowerCase(),
           );
@@ -300,6 +301,38 @@ let currentFilter = "Alla";
             closeDropdown();
           }
         });
+      }
+
+      function initNavbarStickyBehavior() {
+        const navbar = document.querySelector(".navbar");
+        if (!navbar || navbar.dataset.stickyBound === "1") return;
+        navbar.dataset.stickyBound = "1";
+
+        let lastScrollY = window.scrollY || 0;
+        const hideThreshold = 90;
+
+        window.addEventListener(
+          "scroll",
+          () => {
+            const currentScrollY = window.scrollY || 0;
+            const isScrollingDown = currentScrollY > lastScrollY;
+
+            if (currentScrollY <= 0) {
+              navbar.classList.remove("navbar-hidden");
+              lastScrollY = currentScrollY;
+              return;
+            }
+
+            if (isScrollingDown && currentScrollY > hideThreshold) {
+              navbar.classList.add("navbar-hidden");
+            } else {
+              navbar.classList.remove("navbar-hidden");
+            }
+
+            lastScrollY = currentScrollY;
+          },
+          { passive: true },
+        );
       }
 
       function filterRecipes(category) {

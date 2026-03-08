@@ -716,8 +716,9 @@
       }
 
       .close-btn {
-        position: sticky;
-        top: 0.8rem;
+        position: fixed;
+        top: 2.2rem;
+        right: calc((100vw - min(900px, calc(100vw - 2rem))) / 2 + 1rem);
         background: var(--surface);
         border: none;
         width: 40px;
@@ -730,8 +731,8 @@
         justify-content: center;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         transition: all 0.3s;
-        margin: 0.8rem 1rem -3rem auto;
-        z-index: 30;
+        margin: 0;
+        z-index: 1100;
       }
 
       .close-btn:hover {

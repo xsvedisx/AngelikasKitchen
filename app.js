@@ -1,6 +1,10 @@
 let currentFilter = "Alla";
       let currentSort = "newest";
       let recipes = [];
+      let heroSlides = [];
+      let heroCurrentIndex = 0;
+      let heroAutoRotateTimer = null;
+      const HERO_AUTO_ROTATE_MS = 6500;
 
       function init() {
         try {
@@ -11,15 +15,7 @@ let currentFilter = "Alla";
           recipes = data.recipes;
 
           if (recipes.length > 0) {
-            const topRecipeId = window.APP_OPTIONS?.["Top recipe"];
-            const selectedTopRecipe = recipes.find(
-              (r) => Number(r.id) === Number(topRecipeId),
-            );
-            const heroBadge = window.APP_OPTIONS?.["Hero badge"] || "";
-            document.getElementById("heroBadge").textContent = heroBadge;
-            const heroRecipe = selectedTopRecipe || recipes[0];
-            displayHero(heroRecipe);
-            updateSeo(heroRecipe);
+            initHeroCarousel();
           }
 
           createFilterButtons();
@@ -179,19 +175,223 @@ let currentFilter = "Alla";
         return sorted;
       }
 
-      function displayHero(recipe) {
+      function getHeroSlidesFromOptions() {
+        const configuredCards = window.APP_OPTIONS?.["Hero cards"];
+        if (!Array.isArray(configuredCards) || configuredCards.length === 0) {
+          return [];
+        }
+
+        return configuredCards
+          .map((card, index) => {
+            const recipe = recipes.find((r) => Number(r.id) === Number(card?.id));
+            if (!recipe) return null;
+            const label = typeof card?.title === "string" ? card.title.trim() : "";
+            return {
+              recipe,
+              label: label || `Kort ${index + 1}`,
+            };
+          })
+          .filter(Boolean);
+      }
+
+      function initHeroCarousel() {
+        applyHeroCarouselTitle();
+        const fromOptions = getHeroSlidesFromOptions();
+        if (fromOptions.length > 0) {
+          heroSlides = fromOptions;
+        } else {
+          const topRecipeId = window.APP_OPTIONS?.["Top recipe"];
+          const selectedTopRecipe = recipes.find(
+            (r) => Number(r.id) === Number(topRecipeId),
+          );
+          heroSlides = [
+            {
+              recipe: selectedTopRecipe || recipes[0],
+              label: window.APP_OPTIONS?.["Hero badge"] || "",
+            },
+          ];
+        }
+
+        heroCurrentIndex = 0;
+        renderHeroCarouselControls();
+        showHeroSlide(0);
+        bindHeroCarouselInteractions();
+        startHeroAutoRotate();
+      }
+
+      function applyHeroCarouselTitle() {
+        const titleEl = document.getElementById("heroCarouselTitle");
+        if (!titleEl) return;
+        const configuredTitle = window.APP_OPTIONS?.["Hero title"];
+        const title = typeof configuredTitle === "string" ? configuredTitle.trim() : "";
+        if (!title) {
+          titleEl.hidden = true;
+          titleEl.textContent = "";
+          return;
+        }
+        titleEl.hidden = false;
+        titleEl.textContent = title;
+      }
+
+      function showHeroSlide(index) {
+        if (heroSlides.length === 0) return;
+        const normalized = ((index % heroSlides.length) + heroSlides.length) % heroSlides.length;
+        heroCurrentIndex = normalized;
+        const slide = heroSlides[heroCurrentIndex];
+        const recipe = slide.recipe;
+
         document.getElementById("heroImage").src = recipe.image;
+        document.getElementById("heroImage").alt = recipe.title;
+        document.getElementById("heroBadge").textContent = slide.label || "";
         document.getElementById("heroCategory").innerHTML =
           getRecipeCategoryLabels(recipe)
             .map((cat) => `<span class="recipe-category">${cat}</span>`)
             .join("");
         document.getElementById("heroTitle").textContent = recipe.title;
-        document.getElementById("heroDescription").textContent =
-          recipe.description;
+        document.getElementById("heroDescription").textContent = recipe.description;
         document.getElementById("heroTime").textContent = recipe.time;
-        document.getElementById("heroServings").textContent =
-          getPortionLabel(recipe);
+        document.getElementById("heroServings").textContent = getPortionLabel(recipe);
         document.getElementById("heroBtn").onclick = () => openModal(recipe);
+
+        updateSeo(recipe);
+        updateHeroCarouselState();
+      }
+
+      function renderHeroCarouselControls() {
+        const heroSection = document.querySelector(".hero");
+        const panel = document.getElementById("heroCarouselPanel");
+        const indicators = document.getElementById("heroCarouselIndicators");
+        if (!heroSection || !panel || !indicators) return;
+
+        panel.hidden = heroSlides.length <= 1;
+        heroSection.classList.toggle("has-carousel-panel", !panel.hidden);
+        indicators.innerHTML = "";
+
+        heroSlides.forEach((slide, index) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "hero-carousel-indicator";
+          btn.textContent = slide.label || slide.recipe.title;
+          btn.dataset.index = String(index);
+          btn.addEventListener("click", () => {
+            showHeroSlide(index);
+            restartHeroAutoRotate();
+          });
+          indicators.appendChild(btn);
+        });
+      }
+
+      function updateHeroCarouselState() {
+        const status = document.getElementById("heroCarouselStatus");
+        if (status) {
+          status.textContent = `${heroCurrentIndex + 1} / ${heroSlides.length}`;
+        }
+
+        document.querySelectorAll(".hero-carousel-indicator").forEach((btn) => {
+          btn.classList.toggle("active", Number(btn.dataset.index) === heroCurrentIndex);
+        });
+      }
+
+      function moveHeroSlide(step) {
+        showHeroSlide(heroCurrentIndex + step);
+      }
+
+      function startHeroAutoRotate() {
+        if (heroSlides.length <= 1) return;
+        stopHeroAutoRotate();
+        heroAutoRotateTimer = setInterval(() => {
+          moveHeroSlide(1);
+        }, HERO_AUTO_ROTATE_MS);
+      }
+
+      function stopHeroAutoRotate() {
+        if (heroAutoRotateTimer) {
+          clearInterval(heroAutoRotateTimer);
+          heroAutoRotateTimer = null;
+        }
+      }
+
+      function restartHeroAutoRotate() {
+        stopHeroAutoRotate();
+        startHeroAutoRotate();
+      }
+
+      function bindHeroCarouselInteractions() {
+        const heroSection = document.getElementById("heroSection");
+        const prevBtn = document.getElementById("heroPrevBtn");
+        const nextBtn = document.getElementById("heroNextBtn");
+        if (!heroSection || !prevBtn || !nextBtn) return;
+        if (heroSection.dataset.carouselBound === "1") return;
+        heroSection.dataset.carouselBound = "1";
+
+        prevBtn.addEventListener("click", () => {
+          moveHeroSlide(-1);
+          restartHeroAutoRotate();
+        });
+
+        nextBtn.addEventListener("click", () => {
+          moveHeroSlide(1);
+          restartHeroAutoRotate();
+        });
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const swipeThreshold = 45;
+        let pointerStartX = null;
+
+        heroSection.addEventListener(
+          "touchstart",
+          (event) => {
+            touchStartX = event.changedTouches[0].clientX;
+            touchEndX = touchStartX;
+          },
+          { passive: true },
+        );
+
+        heroSection.addEventListener(
+          "touchmove",
+          (event) => {
+            touchEndX = event.changedTouches[0].clientX;
+          },
+          { passive: true },
+        );
+
+        heroSection.addEventListener(
+          "touchend",
+          () => {
+            const delta = touchEndX - touchStartX;
+            if (Math.abs(delta) < swipeThreshold) return;
+            if (delta < 0) moveHeroSlide(1);
+            if (delta > 0) moveHeroSlide(-1);
+            restartHeroAutoRotate();
+          },
+          { passive: true },
+        );
+
+        heroSection.addEventListener("pointerdown", (event) => {
+          if (!event.isPrimary) return;
+          pointerStartX = event.clientX;
+        });
+
+        heroSection.addEventListener("pointerup", (event) => {
+          if (!event.isPrimary || pointerStartX == null) return;
+          const delta = event.clientX - pointerStartX;
+          pointerStartX = null;
+          if (Math.abs(delta) < swipeThreshold) return;
+          if (delta < 0) moveHeroSlide(1);
+          if (delta > 0) moveHeroSlide(-1);
+          restartHeroAutoRotate();
+        });
+
+        heroSection.addEventListener("mouseenter", stopHeroAutoRotate);
+        heroSection.addEventListener("mouseleave", startHeroAutoRotate);
+        document.addEventListener("visibilitychange", () => {
+          if (document.hidden) {
+            stopHeroAutoRotate();
+          } else {
+            startHeroAutoRotate();
+          }
+        });
       }
 
       function createFilterButtons() {

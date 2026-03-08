@@ -83,6 +83,7 @@
 
     <!-- Hero Section - Latest Recipe -->
     <section class="hero">
+      <h2 class="hero-carousel-title" id="heroCarouselTitle" hidden></h2>
       <div class="hero-content" id="heroSection">
         <div class="hero-image">
           <img id="heroImage" src="" alt="Latest Recipe" />
@@ -104,6 +105,26 @@
           </div>
           <button class="hero-btn" id="heroBtn">Visa Recept</button>
         </div>
+      </div>
+      <div class="hero-carousel-panel" id="heroCarouselPanel" hidden>
+        <button
+          class="hero-carousel-arrow"
+          id="heroPrevBtn"
+          type="button"
+          aria-label="Föregående recept"
+        >
+          ‹
+        </button>
+        <div class="hero-carousel-indicators" id="heroCarouselIndicators"></div>
+        <div class="hero-carousel-status" id="heroCarouselStatus"></div>
+        <button
+          class="hero-carousel-arrow"
+          id="heroNextBtn"
+          type="button"
+          aria-label="Nästa recept"
+        >
+          ›
+        </button>
       </div>
     </section>
 

@@ -110,9 +110,13 @@
     <section class="top-controls">
       <div class="top-controls-inner">
         <div class="controls-row">
-          <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Sök recept..." />
-          </div>
+          <details class="category-accordion" id="categoryAccordion">
+            <summary>
+              Kategorier
+              <span id="currentFilterLabel">Alla</span>
+            </summary>
+            <div class="category-list" id="filterButtons"></div>
+          </details>
           <select id="sortSelect" class="sort-select">
             <option value="newest">Nyaste</option>
             <option value="oldest">Äldsta</option>
@@ -120,13 +124,6 @@
             <option value="za">Z-A</option>
           </select>
         </div>
-        <details class="category-accordion" id="categoryAccordion">
-          <summary>
-            Kategorier
-            <span id="currentFilterLabel">Alla</span>
-          </summary>
-          <div class="category-list" id="filterButtons"></div>
-        </details>
       </div>
     </section>
 

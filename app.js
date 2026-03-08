@@ -25,9 +25,7 @@ let currentFilter = "Alla";
           createFilterButtons();
           initNavbarSearch();
           initNavbarStickyBehavior();
-          filterAndDisplay(
-            document.getElementById("searchInput").value.toLowerCase(),
-          );
+          filterAndDisplay();
         } catch (error) {
           console.error("Error loading recipes:", error);
           document.getElementById("recipesGrid").innerHTML = `
@@ -202,6 +200,7 @@ let currentFilter = "Alla";
         ].sort((a, b) => a.localeCompare(b, "sv-SE"));
         const categories = ["Alla", ...uniqueCategories];
         const filterContainer = document.getElementById("filterButtons");
+        if (!filterContainer) return;
         filterContainer.innerHTML = "";
 
         categories.forEach((cat) => {
@@ -337,8 +336,10 @@ let currentFilter = "Alla";
 
       function filterRecipes(category) {
         currentFilter = category;
-        document.getElementById("currentFilterLabel").textContent =
-          category === "Alla" ? "Alla" : translateCategory(category);
+        const label = document.getElementById("currentFilterLabel");
+        if (label) {
+          label.textContent = category === "Alla" ? "Alla" : translateCategory(category);
+        }
 
         document.querySelectorAll(".filter-btn").forEach((btn) => {
           btn.classList.toggle("active", btn.dataset.category === category);
@@ -348,13 +349,10 @@ let currentFilter = "Alla";
           accordion.open = false;
         }
 
-        const searchTerm = document
-          .getElementById("searchInput")
-          .value.toLowerCase();
-        filterAndDisplay(searchTerm);
+        filterAndDisplay();
       }
 
-      function filterAndDisplay(searchTerm) {
+      function filterAndDisplay(searchTerm = "") {
         let filtered = recipes;
 
         if (currentFilter !== "Alla") {
@@ -552,14 +550,9 @@ let currentFilter = "Alla";
         document.body.style.overflow = "auto";
       }
 
-      document.getElementById("searchInput").addEventListener("input", (e) => {
-        filterAndDisplay(e.target.value.toLowerCase());
-      });
       document.getElementById("sortSelect").addEventListener("change", (e) => {
         currentSort = e.target.value;
-        filterAndDisplay(
-          document.getElementById("searchInput").value.toLowerCase(),
-        );
+        filterAndDisplay();
       });
 
       document.getElementById("recipeModal").addEventListener("click", (e) => {

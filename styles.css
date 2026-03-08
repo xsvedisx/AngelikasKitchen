@@ -220,7 +220,7 @@
       /* Hero Section */
       .hero {
         max-width: 1200px;
-        margin: 3rem auto;
+        margin: 1.6rem auto;
         padding: 0 2rem;
         position: relative;
       }
@@ -464,7 +464,7 @@
       /* Top Controls */
       .top-controls {
         max-width: 1200px;
-        margin: 1.5rem auto 0;
+        margin: 0.7rem auto 0;
         padding: 0 2rem;
       }
 
